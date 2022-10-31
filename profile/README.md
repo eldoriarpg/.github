@@ -10,7 +10,7 @@ However we wanted to share the work we already had invested into our projects wi
 ## What is Eldoria today
 
 Today we are a loose group of developers.
-We maintain multiple projects here in this oranization and in other places like the [Landlord](https://github.com/LandlordPlugin) organization.
+We maintain multiple projects here in this organization and in other places like the [Landlord](https://github.com/LandlordPlugin) organization.
 All our plugins are open source, because we think it is important to share knowledge end technology. 
 We also think that every user and server owner should be able to build and inspect the plugins they use on their own.
 
