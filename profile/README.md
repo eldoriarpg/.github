@@ -3,9 +3,8 @@
 ## How Eldoria was founded
 
 Eldoria was founded as an RPG server.
-We planned to make an unique RPG experience within Minecraft with unique self written plugins like every other RPG server wants.
-Sadly we lacked the resources to make our plans become real.
-However we wanted to share the work we already had invested into our projects with others. Thats why we initally created this oranziation.
+We planned to make an unique RPG experience within Minecraft with unique self written plugins like every other RPG server wants. Sadly we lacked the resources to make our plans become real. 
+owever we wanted to share the work we already had invested into our projects with others. That's why we initially created this organization.
 
 ## What is Eldoria today
 
