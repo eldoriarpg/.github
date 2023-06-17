@@ -3,7 +3,7 @@
   "baseBranches": ["main"],
   "dependencyDashboard": true,
   "labels": ["dependencies"],
-  "branchPrefix": "deps",
+  "branchPrefix": "deps/",
   "extends": [
     "config:base"
   ],
