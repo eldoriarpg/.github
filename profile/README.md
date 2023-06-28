@@ -1,24 +1,24 @@
-<img class="center" src="https://imgur.com/Ivz5y6e.png" alt="drawing" width="200"/>
-
 ## How Eldoria was founded
 
-Eldoria was founded as an RPG server.
-We planned to make an unique RPG experience within Minecraft with unique self written plugins like every other RPG server wants. Sadly we lacked the resources to make our plans become real. 
-owever we wanted to share the work we already had invested into our projects with others. That's why we initially created this organization.
+Eldoria was founded by me ([RainbowDashLabs](https://github.com/rainbowdashlabs) aka. Hadde) and some other devs in 2014 as an RPG server.
+I planned to make a unique RPG experience within Minecraft with unique self written plugins like every other RPG server wants.
+We wanted to share the work we had invested into our projects with others.
+That's why we initially created this organization.
+Sadly the team and I lacked the resources to make our plans become real.
 
 ## What is Eldoria today
 
-Today we are a loose group of developers.
-We maintain multiple projects here in this organization and in other places like the [Landlord](https://github.com/LandlordPlugin) organization.
-All our plugins are open source, because we think it is important to share knowledge end technology. 
+Today I mainly publish my plugins here, but some of them are also developed by former devs of the eldoria team. 
+Together, we maintain multiple projects here in this organization and in other places like the [Landlord](https://github.com/LandlordPlugin) organization.
+All our plugins and tools are open source, because we think it is important to share knowledge end technology. 
 We also think that every user and server owner should be able to build and inspect the plugins they use on their own.
 
-Most of our plugins are published on [spigot](https://www.spigotmc.org/members/585216/).
+I publish my own plugins and landlord on [spigot](https://www.spigotmc.org/members/585216/).
 
 ## Get in touch
-You can contact us via our [discord](https://discord.com/invite/rfRuUge)
+You can contact us via our discord
 
-<img class="center" href="https://discord.com/invite/rfRuUge" src="https://imgur.com/DEEpqO2.png" alt="drawing" width="300"/>
+[![](https://discordapp.com/api/guilds/718502316940066927/widget.png?style=banner3)](https://discord.eldoria.de)
 
 ## Noteable Projects
 

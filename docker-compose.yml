@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  docs:
+    volumes:
+      - "./docs/:/app/docs"
+      - "./profile/README.md:/app/docs/index.md"
+      - "./mkdocs.yml:/app/mkdocs.yml"
+    build:
+      dockerfile: dev.Dockerfile
+    ports:
+      - "80:80"
