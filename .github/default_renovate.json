@@ -18,8 +18,5 @@
       "automerge": true,
       "squash": true
     }
-  ],
-  "gradle": {
-    "enabled": true
-  },
+  ]
 }
