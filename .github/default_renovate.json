@@ -17,6 +17,10 @@
       "matchDepNames": ["gradle"],
       "automerge": true,
       "squash": true
+    },
+    {
+      "matchDepNames": ["spigot-api", "paper-api", "MockBukkit"],
+      "enabled": false
     }
   ]
 }
