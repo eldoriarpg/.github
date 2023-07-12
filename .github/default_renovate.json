@@ -19,6 +19,15 @@
       "squash": true
     },
     {
+      "groupName": "fawe",
+      "matchPackagePatterns": ["com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit", "com.fastasyncworldedit:FastAsyncWorldEdit-Core"]
+    },
+    {
+      "matchPackagePatterns": ["com.sk89q.worldedit:worldedit-bukkit", "com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit", "com.fastasyncworldedit:FastAsyncWorldEdit-Core"].
+      "automerge": true,
+      "squash": true
+    },
+    {
       "matchPackagePatterns": ["io.papermc.paper:paper-api", "org.spigotmc:spigot-api", "com.github.seeseemelk:MockBukkit-.+"],
       "enabled": false
     }
