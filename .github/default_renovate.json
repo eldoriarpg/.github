@@ -8,10 +8,17 @@
     "config:base"
   ],
   "reviewers": [
-    "RainbowDashLabs",
-    "Goldmensch",
-    "NyCodeGHG"
+    "RainbowDashLabs"
   ],
   "prConcurrentLimit": 3,
-  "prHourlyLimit": 10
+  "prHourlyLimit": 10,
+  "packageRules": [
+    {
+      "depTypeList": ["gradle"],
+      "automerge": true
+    }
+  ],
+  "gradle": {
+    "enabled": true
+  },
 }
