@@ -23,7 +23,7 @@
       "matchPackagePatterns": ["com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit", "com.fastasyncworldedit:FastAsyncWorldEdit-Core"]
     },
     {
-      "matchPackagePatterns": ["com.sk89q.worldedit:worldedit-bukkit", "com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit", "com.fastasyncworldedit:FastAsyncWorldEdit-Core"].
+      "matchPackagePatterns": ["com.sk89q.worldedit:worldedit-bukkit", "com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit", "com.fastasyncworldedit:FastAsyncWorldEdit-Core"],
       "automerge": true,
       "squash": true
     },
