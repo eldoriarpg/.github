@@ -19,7 +19,7 @@
       "squash": true
     },
     {
-      "matchDepNames": ["spigot-api", "paper-api", "MockBukkit"],
+      "matchPackagePatterns": ["io.papermc.paper:paper-api", "org.spigotmc:spigot-api", "com.github.seeseemelk:MockBukkit-.+"],
       "enabled": false
     }
   ]
