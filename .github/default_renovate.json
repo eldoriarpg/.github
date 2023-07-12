@@ -14,7 +14,7 @@
   "prHourlyLimit": 10,
   "packageRules": [
     {
-      "depTypeList": ["gradle"],
+      "matchDepNames": ["gradle"],
       "automerge": true,
       "squash": true
     }
