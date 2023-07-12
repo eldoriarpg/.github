@@ -23,9 +23,13 @@
       "matchPackagePatterns": ["com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit", "com.fastasyncworldedit:FastAsyncWorldEdit-Core"]
     },
     {
-      "matchPackagePatterns": ["com.sk89q.worldedit:worldedit-bukkit", "com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit", "com.fastasyncworldedit:FastAsyncWorldEdit-Core"],
+      "matchPackagePatterns": ["com.sk89q.worldedit:worldedit-bukkit", "com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit", "com.fastasyncworldedit:FastAsyncWorldEdit-Core", "io.lumine:Mythic-Dist", "net.kyori:adventure-api", "net.kyori:adventure-platform-bukkit", "net.kyori:adventure-text-minimessage"],
       "automerge": true,
       "squash": true
+    },
+    {
+      "groupName": "adventure",
+      "matchPackagePrefixes": ["org.apache.logging.log4j"]
     },
     {
       "matchPackagePatterns": ["io.papermc.paper:paper-api", "org.spigotmc:spigot-api", "com.github.seeseemelk:MockBukkit-.+"],
