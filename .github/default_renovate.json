@@ -15,7 +15,8 @@
   "packageRules": [
     {
       "depTypeList": ["gradle"],
-      "automerge": true
+      "automerge": true,
+      "squash": true
     }
   ],
   "gradle": {
