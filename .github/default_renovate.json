@@ -28,10 +28,6 @@
       "squash": true
     },
     {
-      "groupName": "adventure",
-      "matchPackagePrefixes": ["org.apache.logging.log4j"]
-    },
-    {
       "matchPackagePatterns": ["io.papermc.paper:paper-api", "org.spigotmc:spigot-api", "com.github.seeseemelk:MockBukkit-.+"],
       "enabled": false
     }
