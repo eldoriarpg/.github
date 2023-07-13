@@ -42,7 +42,8 @@
         "net.kyori:adventure-platform-bukkit",
         "net.kyori:adventure-text-minimessage",
         "com.sk89q.worldguard:worldguard-bukkit",
-        "net.minecrell.plugin-yml.bukkit"
+        "net.minecrell.plugin-yml.bukkit",
+        "org.gradle.toolchains.foojay-resolver-convention"
       ],
       "automerge": true,
       "squash": true
