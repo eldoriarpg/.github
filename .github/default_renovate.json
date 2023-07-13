@@ -1,8 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "baseBranches": ["dev"],
+  "baseBranches": [
+    "dev"
+  ],
   "dependencyDashboard": true,
-  "labels": ["dependencies"],
+  "labels": [
+    "dependencies"
+  ],
   "branchPrefix": "deps/",
   "extends": [
     "config:base"
@@ -14,22 +18,47 @@
   "prHourlyLimit": 10,
   "packageRules": [
     {
-      "matchDepNames": ["gradle", "maven"],
+      "matchDepNames": [
+        "gradle",
+        "maven"
+      ],
       "automerge": true,
       "squash": true
     },
     {
-      "groupName": "fawe",
-      "matchPackagePatterns": ["com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit", "com.fastasyncworldedit:FastAsyncWorldEdit-Core"]
+      "groupName": "FAWE",
+      "matchPackagePatterns": [
+        "com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit",
+        "com.fastasyncworldedit:FastAsyncWorldEdit-Core"
+      ]
     },
     {
-      "matchPackagePatterns": ["com.sk89q.worldedit:worldedit-bukkit", "com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit", "com.fastasyncworldedit:FastAsyncWorldEdit-Core", "io.lumine:Mythic-Dist", "net.kyori:adventure-api", "net.kyori:adventure-platform-bukkit", "net.kyori:adventure-text-minimessage"],
+      "matchPackagePatterns": [
+        "com.sk89q.worldedit:worldedit-bukkit",
+        "com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit",
+        "com.fastasyncworldedit:FastAsyncWorldEdit-Core",
+        "io.lumine:Mythic-Dist",
+        "net.kyori:adventure-api",
+        "net.kyori:adventure-platform-bukkit",
+        "net.kyori:adventure-text-minimessage",
+        "com.sk89q.worldguard:worldguard-bukkit"
+      ],
       "automerge": true,
       "squash": true
     },
     {
-      "matchPackagePatterns": ["io.papermc.paper:paper-api", "org.spigotmc:spigot-api", "com.github.seeseemelk:MockBukkit-.+"],
+      "matchPackagePatterns": [
+        "io.papermc.paper:paper-api",
+        "org.spigotmc:spigot-api",
+        "com.github.seeseemelk:MockBukkit-.+"
+      ],
       "enabled": false
+    },
+    {
+      "groupName": "plotsquared",
+      "matchPackagePrefixes": [
+        "com.plotsquared"
+      ]
     }
   ]
 }
