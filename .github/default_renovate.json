@@ -43,7 +43,8 @@
         "net.kyori:adventure-text-minimessage",
         "com.sk89q.worldguard:worldguard-bukkit",
         "net.minecrell.plugin-yml.bukkit",
-        "org.gradle.toolchains.foojay-resolver-convention"
+        "org.gradle.toolchains.foojay-resolver-convention",
+        "com.diffplug.spotless"
       ],
       "automerge": true,
       "squash": true
