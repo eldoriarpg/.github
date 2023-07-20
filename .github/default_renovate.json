@@ -51,7 +51,7 @@
     },
     {
       "matchUpdateTypes": ["minor", "patch"],
-      "matchPackageName": ["com.github.TownyAdvanced:Towny"],
+      "matchPackageNames": ["com.github.TownyAdvanced:Towny"],
       "automerge": true,
       "schedule": ["on the first day of the month"],
       "enabled": true
