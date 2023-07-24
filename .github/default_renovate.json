@@ -44,7 +44,10 @@
         "com.sk89q.worldguard:worldguard-bukkit",
         "net.minecrell.plugin-yml.bukkit",
         "org.gradle.toolchains.foojay-resolver-convention",
-        "com.diffplug.spotless"
+        "com.diffplug.spotless",
+        "org.junit.jupiter:junit-jupiter-api",
+        "org.junit.jupiter:junit-jupiter-engine",
+        "org.junit:junit-bom"
       ],
       "automerge": true,
       "squash": true
