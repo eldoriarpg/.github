@@ -48,7 +48,9 @@
         "org.junit.jupiter:junit-jupiter-api",
         "org.junit.jupiter:junit-jupiter-engine",
         "org.junit:junit-bom",
-        "de.chojo.publishdata"
+        "de.chojo.publishdata",
+        "actions/checkout",
+        "org.slf4j:slf4j-api"
       ],
       "automerge": true,
       "squash": true
