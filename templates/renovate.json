@@ -30,36 +30,71 @@
       "matchPackagePatterns": [
         "com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit",
         "com.fastasyncworldedit:FastAsyncWorldEdit-Core"
-      ]
-    },
-    {
-      "matchPackagePatterns": [
-        "com.sk89q.worldedit:worldedit-bukkit",
-        "com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit",
-        "com.fastasyncworldedit:FastAsyncWorldEdit-Core",
-        "io.lumine:Mythic-Dist",
-        "net.kyori:adventure-api",
-        "net.kyori:adventure-platform-bukkit",
-        "net.kyori:adventure-text-minimessage",
-        "com.sk89q.worldguard:worldguard-bukkit",
-        "net.minecrell.plugin-yml.bukkit",
-        "org.gradle.toolchains.foojay-resolver-convention",
-        "com.diffplug.spotless",
-        "org.junit.jupiter:junit-jupiter-api",
-        "org.junit.jupiter:junit-jupiter-engine",
-        "org.junit:junit-bom",
-        "de.chojo.publishdata",
-        "actions/checkout",
-        "org.slf4j:slf4j-api"
       ],
       "automerge": true,
       "squash": true
     },
     {
-      "matchUpdateTypes": ["minor", "patch"],
-      "matchPackageNames": ["com.github.TownyAdvanced:Towny"],
+      "groupName": "adventure",
+      "matchPackagePatterns": [
+        "net.kyori:adventure-text-minimessage",
+        "net.kyori:adventure-api",
+        "net.kyori:adventure-platform-bukkit"
+      ],
       "automerge": true,
-      "schedule": ["on the first day of the month"],
+      "squash": true
+    },
+    {
+      "groupName": "jackson",
+      "matchPackagePatterns": [
+        "com.fasterxml.jackson.core:jackson-core",
+        "com.fasterxml.jackson.core:jackson-databind",
+        "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml",
+        "com.fasterxml.jackson.datatype:jackson-datatype-jsr310"
+      ]
+    },
+    {
+      "groupName": "junit",
+      "matchPackagePatterns": [
+        "org.junit.jupiter:junit-jupiter-api",
+        "org.junit.jupiter:junit-jupiter-engine",
+        "org.junit:junit-bom"
+      ],
+      "automerge": true,
+      "squash": true
+    },
+    {
+      "matchPackagePatterns": [
+        "actions/checkout",
+        "com.diffplug.spotless",
+        "com.sk89q.worldedit:worldedit-bukkit",
+        "com.sk89q.worldguard:worldguard-bukkit",
+        "de.chojo.publishdata",
+        "net.minecrell.plugin-yml.bukkit",
+        "org.gradle.toolchains.foojay-resolver-convention",
+        "org.junit.jupiter:junit-jupiter-api",
+        "org.junit.jupiter:junit-jupiter-engine",
+        "org.junit:junit-bom",
+        "org.slf4j:slf4j-api",
+        "org.jetbrains:annotations",
+        "io.lumine:Mythic-Dist",
+        "me.clip:placeholderapi"
+      ],
+      "automerge": true,
+      "squash": true
+    },
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchPackageNames": [
+        "com.github.TownyAdvanced:Towny"
+      ],
+      "automerge": true,
+      "schedule": [
+        "on the first day of the month"
+      ],
       "enabled": true
     },
     {
@@ -74,7 +109,9 @@
       "groupName": "plotsquared",
       "matchPackagePrefixes": [
         "com.plotsquared"
-      ]
+      ],
+      "automerge": true,
+      "squash": true
     }
   ]
 }
