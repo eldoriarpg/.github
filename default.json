@@ -1,117 +1,126 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "baseBranches": [
-    "dev"
-  ],
-  "dependencyDashboard": true,
-  "labels": [
-    "dependencies"
-  ],
-  "branchPrefix": "deps/",
-  "extends": [
-    "config:base"
-  ],
-  "reviewers": [
-    "RainbowDashLabs"
-  ],
-  "prConcurrentLimit": 3,
-  "prHourlyLimit": 10,
-  "packageRules": [
-    {
-      "matchDepNames": [
-        "gradle",
-        "maven"
-      ],
-      "automerge": true,
-      "squash": true
-    },
-    {
-      "groupName": "FAWE",
-      "matchPackagePatterns": [
-        "com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit",
-        "com.fastasyncworldedit:FastAsyncWorldEdit-Core"
-      ],
-      "automerge": true,
-      "squash": true
-    },
-    {
-      "groupName": "adventure",
-      "matchPackagePatterns": [
-        "net.kyori:adventure-text-minimessage",
-        "net.kyori:adventure-api",
-        "net.kyori:adventure-platform-bukkit"
-      ],
-      "automerge": true,
-      "squash": true
-    },
-    {
-      "groupName": "jackson",
-      "matchPackagePatterns": [
-        "com.fasterxml.jackson.core:jackson-core",
-        "com.fasterxml.jackson.core:jackson-databind",
-        "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml",
-        "com.fasterxml.jackson.datatype:jackson-datatype-jsr310"
-      ]
-    },
-    {
-      "groupName": "junit",
-      "matchPackagePatterns": [
-        "org.junit.jupiter:junit-jupiter-api",
-        "org.junit.jupiter:junit-jupiter-engine",
-        "org.junit:junit-bom"
-      ],
-      "automerge": true,
-      "squash": true
-    },
-    {
-      "matchPackagePatterns": [
-        "actions/checkout",
-        "com.diffplug.spotless",
-        "com.sk89q.worldedit:worldedit-bukkit",
-        "com.sk89q.worldguard:worldguard-bukkit",
-        "de.chojo.publishdata",
-        "net.minecrell.plugin-yml.bukkit",
-        "org.gradle.toolchains.foojay-resolver-convention",
-        "org.junit.jupiter:junit-jupiter-api",
-        "org.junit.jupiter:junit-jupiter-engine",
-        "org.junit:junit-bom",
-        "org.slf4j:slf4j-api",
-        "org.jetbrains:annotations",
-        "io.lumine:Mythic-Dist",
-        "me.clip:placeholderapi"
-      ],
-      "automerge": true,
-      "squash": true
-    },
-    {
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
-      "matchPackageNames": [
-        "com.github.TownyAdvanced:Towny"
-      ],
-      "automerge": true,
-      "schedule": [
-        "on the first day of the month"
-      ],
-      "enabled": true
-    },
-    {
-      "matchPackagePatterns": [
-        "io.papermc.paper:paper-api",
-        "org.spigotmc:spigot-api",
-        "com.github.seeseemelk:MockBukkit-.+"
-      ],
-      "enabled": false
-    },
-    {
-      "groupName": "plotsquared",
-      "matchPackagePrefixes": [
-        "com.plotsquared"
-      ],
-      "automerge": true,
-      "squash": true
-    }
-  ]
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "baseBranches": [
+        "dev"
+    ],
+    "dependencyDashboard": true,
+    "labels": [
+        "dependencies"
+    ],
+    "branchPrefix": "deps/",
+    "extends": [
+        "config:base"
+    ],
+    "reviewers": [
+        "RainbowDashLabs"
+    ],
+    "prConcurrentLimit": 3,
+    "prHourlyLimit": 10,
+    "packageRules": [
+        {
+            "matchDepNames": [
+                "gradle",
+                "maven"
+            ],
+            "automerge": true,
+            "squash": true
+        },
+        {
+            "groupName": "FAWE",
+            "matchPackagePatterns": [
+                "com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit",
+                "com.fastasyncworldedit:FastAsyncWorldEdit-Core"
+            ],
+            "automerge": true,
+            "squash": true
+        },
+        {
+            "groupName": "adventure",
+            "matchPackagePatterns": [
+                "net.kyori:adventure-text-minimessage",
+                "net.kyori:adventure-api",
+                "net.kyori:adventure-platform-bukkit"
+            ],
+            "automerge": true,
+            "squash": true
+        },
+        {
+            "groupName": "jackson",
+            "matchPackagePatterns": [
+                "com.fasterxml.jackson.core:jackson-core",
+                "com.fasterxml.jackson.core:jackson-databind",
+                "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml",
+                "com.fasterxml.jackson.datatype:jackson-datatype-jsr310"
+            ]
+        },
+        {
+            "groupName": "junit",
+            "matchPackagePatterns": [
+                "org.junit.jupiter:junit-jupiter-api",
+                "org.junit.jupiter:junit-jupiter-engine",
+                "org.junit:junit-bom"
+            ],
+            "automerge": true,
+            "squash": true
+        },
+        {
+            "matchPackagePatterns": [
+                "actions/checkout",
+                "com.diffplug.spotless",
+                "com.sk89q.worldedit:worldedit-bukkit",
+                "com.sk89q.worldguard:worldguard-bukkit",
+                "de.chojo.publishdata",
+                "net.minecrell.plugin-yml.bukkit",
+                "org.gradle.toolchains.foojay-resolver-convention",
+                "org.junit.jupiter:junit-jupiter-api",
+                "org.junit.jupiter:junit-jupiter-engine",
+                "org.junit:junit-bom",
+                "org.slf4j:slf4j-api",
+                "org.jetbrains:annotations",
+                "io.lumine:Mythic-Dist",
+                "me.clip:placeholderapi"
+            ],
+            "automerge": true,
+            "squash": true
+        },
+        {
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ],
+            "matchPackageNames": [
+                "com.github.TownyAdvanced:Towny"
+            ],
+            "automerge": true,
+            "schedule": [
+                "on the first day of the month"
+            ],
+            "enabled": true
+        },
+        {
+            "matchPackagePatterns": [
+                "io.papermc.paper:paper-api",
+                "org.spigotmc:spigot-api",
+                "com.github.seeseemelk:MockBukkit-.+"
+            ],
+            "enabled": false
+        },
+        {
+            "groupName": "plotsquared",
+            "matchPackagePrefixes": [
+                "com.plotsquared"
+            ],
+            "automerge": true,
+            "squash": true
+        },
+        {
+            "groupName": "sadu",
+            "matchPackagePatterns": [
+                "de.chojo.sadu"
+            ],
+            "automerge": true,
+            "squash": true
+        }
+
+    ]
 }
