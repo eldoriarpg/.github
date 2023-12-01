@@ -66,6 +66,7 @@
         {
             "matchPackagePatterns": [
                 "actions/checkout",
+                "actions/setup-java",
                 "com.diffplug.spotless",
                 "com.sk89q.worldedit:worldedit-bukkit",
                 "com.sk89q.worldguard:worldguard-bukkit",
