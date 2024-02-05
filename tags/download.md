@@ -4,10 +4,10 @@ You can download plugins using the </download:1083208015022411889> command.
 
 ## What can I download?
 
-### Everyone
+### Everyone  
 > **stable, development** and **snapshot** builds of **free plugins**
 
-### Spigot Purchase
+### Spigot Purchase  
 > **stable** builds of the **purchased premium plugin**
 
 ### Patreon - Plugin Lover  
@@ -16,5 +16,4 @@ You can download plugins using the </download:1083208015022411889> command.
 ### Patreon - Plugin Enthusiast  
 >  **stable, development** and **snapshot** builds of **all premium plugins**
 
-** <:patreon:1133690408799584327>  Support my work on Patreon c:**
-<https://patreon.com/eldoriaplugins>
+** ## Support my work on [Patreon](<https://patreon.com/eldoriaplugins>) or [KoFi](<https://ko-fi.com/eldoriaplugins>) **
