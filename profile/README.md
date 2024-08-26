@@ -1,6 +1,6 @@
 ## How Eldoria was founded
 
-Eldoria was founded by me ([RainbowDashLabs](https://github.com/rainbowdashlabs) aka. Hadde) and some other devs in 2014 as an RPG server.
+Eldoria was founded by me ([RainbowDashLabs](https://github.com/rainbowdashlabs) aka. Lilly) and some other devs in 2014 as an RPG server.
 I planned to make a unique RPG experience within Minecraft with unique self written plugins like every other RPG server wants.
 We wanted to share the work we had invested into our projects with others.
 That's why we initially created this organization.
