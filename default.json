@@ -1,6 +1,6 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "baseBranches": [
+    "baseBranchPatterns": [
         "dev"
     ],
     "dependencyDashboard": true,
@@ -9,7 +9,11 @@
     ],
     "branchPrefix": "deps/",
     "extends": [
-        "config:base"
+        "config:recommended"
+    ],
+    "timezone": "Europe/Berlin",
+    "schedule": [
+        "before 6am on monday"
     ],
     "reviewers": [
         "RainbowDashLabs"
@@ -18,73 +22,49 @@
     "prHourlyLimit": 10,
     "packageRules": [
         {
-            "matchDepNames": [
-                "gradle",
-                "maven"
+            "description": "npm packages wait 14 days after release",
+            "matchManagers": [
+                "npm"
+            ],
+            "minimumReleaseAge": "14 days"
+        },
+        {
+            "description": "Auto-merge minor and patch updates",
+            "matchUpdateTypes": [
+                "minor",
+                "patch",
+                "pin",
+                "digest"
             ],
             "automerge": true,
-            "squash": true
+            "automergeType": "branch"
         },
         {
-            "groupName": "FAWE",
-            "matchPackagePatterns": [
-                "com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit",
-                "com.fastasyncworldedit:FastAsyncWorldEdit-Core"
+            "description": "Major updates require a PR and manual approval",
+            "matchUpdateTypes": [
+                "major"
             ],
-            "automerge": true,
-            "squash": true
+            "automerge": false
         },
         {
-            "groupName": "adventure",
-            "matchPackagePatterns": [
-                "net.kyori:adventure-text-minimessage",
-                "net.kyori:adventure-api",
-                "net.kyori:adventure-platform-bukkit"
+            "description": "Group all non-major dependency updates",
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
             ],
-            "automerge": true,
-            "squash": true
+            "groupName": "all non-major dependencies",
+            "groupSlug": "all-minor-patch"
         },
         {
-            "groupName": "jackson",
-            "matchPackagePatterns": [
-                "com.fasterxml.jackson.core:jackson-core",
-                "com.fasterxml.jackson.core:jackson-databind",
-                "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml",
-                "com.fasterxml.jackson.datatype:jackson-datatype-jsr310"
-            ]
-        },
-        {
-            "groupName": "junit",
-            "matchPackagePatterns": [
-                "org.junit.jupiter:junit-jupiter-api",
-                "org.junit.jupiter:junit-jupiter-engine",
-                "org.junit:junit-bom"
+            "description": "Group all major updates",
+            "matchUpdateTypes": [
+                "major"
             ],
-            "automerge": true,
-            "squash": true
+            "groupName": "major updates",
+            "groupSlug": "major"
         },
         {
-            "matchPackagePatterns": [
-                "actions/checkout",
-                "actions/setup-java",
-                "com.diffplug.spotless",
-                "com.sk89q.worldedit:worldedit-bukkit",
-                "com.sk89q.worldguard:worldguard-bukkit",
-                "de.chojo.publishdata",
-                "net.minecrell.plugin-yml.bukkit",
-                "org.gradle.toolchains.foojay-resolver-convention",
-                "org.junit.jupiter:junit-jupiter-api",
-                "org.junit.jupiter:junit-jupiter-engine",
-                "org.junit:junit-bom",
-                "org.slf4j:slf4j-api",
-                "org.jetbrains:annotations",
-                "io.lumine:Mythic-Dist",
-                "me.clip:placeholderapi"
-            ],
-            "automerge": true,
-            "squash": true
-        },
-        {
+            "description": "Towny minor and patch updates once a month",
             "matchUpdateTypes": [
                 "minor",
                 "patch"
@@ -92,36 +72,19 @@
             "matchPackageNames": [
                 "com.github.TownyAdvanced:Towny"
             ],
-            "automerge": true,
             "schedule": [
                 "on the first day of the month"
-            ],
-            "enabled": true
+            ]
         },
         {
-            "matchPackagePatterns": [
+            "description": "Server APIs and their test servers are updated by hand, together with the supported server version",
+            "matchPackageNames": [
                 "io.papermc.paper:paper-api",
                 "org.spigotmc:spigot-api",
-                "com.github.seeseemelk:MockBukkit-.+"
+                "/^com\\.github\\.seeseemelk:MockBukkit-.+$/",
+                "/^org\\.mockbukkit\\.mockbukkit:mockbukkit-.+$/"
             ],
             "enabled": false
-        },
-        {
-            "groupName": "plotsquared",
-            "matchPackagePrefixes": [
-                "com.plotsquared"
-            ],
-            "automerge": true,
-            "squash": true
-        },
-        {
-            "groupName": "sadu",
-            "matchPackagePatterns": [
-                "de.chojo.sadu"
-            ],
-            "automerge": true,
-            "squash": true
         }
-
     ]
 }
